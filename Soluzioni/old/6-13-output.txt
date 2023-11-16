@@ -1,0 +1,30 @@
+Amici: 7.0 8.0 7.0 - Media: 7.33
+Biella: 8.0 9.5 7.0 - Media: 8.17
+Brescia: 5.0 7.5 9.0 - Media: 7.17
+Carolla: 7.0 8.5 8.5 - Media: 8.00
+Cunegatti: 7.0 7.0 - Media: 7.00
+De Bella: 4.0 4.0 4.5 5.0 - Media: 4.38
+De Vecchi: 8.0 10.0 6.0 - Media: 8.00
+Fumagalli: 8.5 6.0 4.5 - Media: 6.33
+Galimberti: 9.0 9.0 9.0 - Media: 9.00
+Germanò: 8.5 9.0 7.5 - Media: 8.33
+Gubellini: 8.0 10.0 7.0 - Media: 8.33
+Lepore: 5.5 4.0 3.0 5.0 - Media: 4.38
+Maconi: 7.5 5.0 - Media: 6.25
+Mariani: 8.0 8.0 7.0 - Media: 7.67
+Mattavelli: 9.0 9.5 8.5 - Media: 9.00
+Oggiano: 5.0 3.0 3.0 2.0 - Media: 3.25
+Passoni: 5.0 6.0 6.0 7.5 - Media: 6.12
+Pastori: 3.5 5.0 7.0 2.0 - Media: 4.38
+Pirovano: 6.5 7.5 7.5 - Media: 7.17
+Rudi: 9.5 10.0 10.0 - Media: 9.83
+Russell: 7.5 4.5 - Media: 6.00
+Sogos: 4.0 3.5 3.5 2.0 - Media: 3.25
+Tezza: 7.0 5.5 5.5 - Media: 6.00
+Varisco: 8.0 9.0 8.5 - Media: 8.50
+Pirovano: 6.5 7.5 7.5 - Media: 7.17
+Rudi: 9.5 10.0 10.0 - Media: 9.83
+Russell: 7.5 4.5 5.5 - Media: 5.83
+Sogos: 4.0 3.5 3.5 - Media: 3.67
+Tezza: 7.0 5.5 5.5 - Media: 6.00
+Varisco: 8.0 9.0 8.5 - Media: 8.50
