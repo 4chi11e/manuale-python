@@ -1,4 +1,3 @@
-from coda import Coda
 from random import randint
 
 class Nodo:
