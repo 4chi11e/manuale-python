@@ -33,14 +33,14 @@ class Tavolo():
         for nriga in range(1, self.nrighe):
             pygame.draw.line(self.image, 
                             self.colore_righe, 
-                            (0, self.height*(nriga)/(self.nrighe)-self.spessore_linea/2), 
-                            (self.width, self.height*(nriga)/(self.nrighe)-self.spessore_linea/2), 
+                            (0, self.height*(nriga/self.nrighe)), 
+                            (self.width, self.height*(nriga/self.nrighe)), 
                             self.spessore_linea)
-        for ncolonna in range(ncolonne):
+        for ncolonna in range(1, ncolonne):
             pygame.draw.line(self.image, 
                             self.colore_righe, 
-                            (self.width*(ncolonna)/(self.ncolonne)-self.spessore_linea/2, 0), 
-                            (self.width*(ncolonna)/(self.ncolonne)-self.spessore_linea/2, self.height), 
+                            (self.width*(ncolonna/self.ncolonne), 0), 
+                            (self.width*(ncolonna/self.ncolonne), self.height), 
                             self.spessore_linea)
         
         screen.blit(self.image, self.rect)

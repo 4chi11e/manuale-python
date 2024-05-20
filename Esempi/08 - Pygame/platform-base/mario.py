@@ -11,17 +11,23 @@ class Mario:
         self.size = piattaforma.tile_width, piattaforma.tile_height
         self.vel_orizz = vel_orizz
         self.forza_jump = forza_jump
-        self.image = pygame.image.load('./immagini/mario_trasparente.png')
+        self.image = pygame.image.load('immagini/mario_trasparente.png')
         self.image = pygame.transform.scale(self.image, self.size)
         self.rect = pygame.Rect(pos[0], pos[1], self.image.get_width(), self.image.get_height())
         self.moving_right = False
         self.moving_left = False
+        self.looking_right = True
+        self.looking_left = False
         self.vel_vett = [0,0]
-        self.jumping = True
+        self.aterra = False
         self.vecchie_collisioni = {'top': False, 'bottom': False, 'right': False, 'left': False}
 
 
     def move_right(self):
+        if self.looking_left:
+            self.image = pygame.transform.flip(self.image, True, False)
+            self.looking_right = True
+            self.looking_left = False
         self.moving_right = True
         self.moving_left = False
     
@@ -29,6 +35,10 @@ class Mario:
         self.moving_right = False
 
     def move_left(self):
+        if self.looking_right:
+            self.image = pygame.transform.flip(self.image, True, False)
+            self.looking_left = True
+            self.looking_right = False
         self.moving_left = True
         self.moving_right = False
     
@@ -83,15 +93,19 @@ class Mario:
             self.rect.right = self.display.get_width()
 
         if collision_types['bottom']:
-            self.jumping = False
+            self.aterra = True
 
 
     def jump(self):
-        if not self.jumping:
+        if self.aterra:
             self.vel_vett[1] -= self.forza_jump
-            self.jumping = True
+            self.aterra = False
+            
+            #debug
+            if self.vel_vett[1] < -self.forza_jump:
+                print(self.vel_vett[1])
 
     def draw(self):
         # screen.blit(self.image, self.pos)
-        self.display.blit(self.image, (self.rect.x, self.rect.y))
+        self.display.blit(self.image, self.rect)
     

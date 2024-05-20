@@ -35,7 +35,8 @@ blocca = False
 
 def click_down(posx, posy):
     # print(posx, posy)
-    if posx > tavolo.rect.left and posx < tavolo.rect.left + tavolo.width and posy > tavolo.rect.top and posy < tavolo.rect.top + tavolo.height:
+    # if posx > tavolo.rect.left and posx < tavolo.rect.left + tavolo.width and posy > tavolo.rect.top and posy < tavolo.rect.top + tavolo.height:
+    if tavolo.rect.collidepoint((posx, posy)):
         tavolo.click_down(posx, posy)
     else:
         reset_button.draw(click=True)
@@ -66,11 +67,11 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if not blocca:
                 posx, posy = pygame.mouse.get_pos()
-                print("mousebuttondown:", posx, posy)
+                # print("mousebuttondown:", posx, posy)
                 click_down(posx, posy)
 
         if event.type == pygame.MOUSEBUTTONUP:
-                print("mousebuttonup")
+                # print("mousebuttonup")
                 click_up(posx, posy)
 
         
