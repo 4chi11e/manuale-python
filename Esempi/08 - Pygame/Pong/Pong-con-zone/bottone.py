@@ -23,7 +23,7 @@ class Bottone:
     def draw(self):
         self.image.fill(BLACK)
 
-        self.text = self.font.render(self.testo, 1, self.colore)
+        self.text = self.font.render(self.testo, True, self.colore)
 
         # self.image.fill((100,100,100))
         pygame.draw.rect(self.image, (self.colore), (0, 0, self.rect.width, self.rect.height), 5)

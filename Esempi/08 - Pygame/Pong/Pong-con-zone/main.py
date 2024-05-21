@@ -133,15 +133,15 @@ while True:
         keys = pygame.key.get_pressed()
 
         # movimenti del paddle A (w/s)
-        if keys[pygame.K_w]:
+        if keys[K_w]:
             paddleA.moveUp(5)
-        if keys[pygame.K_s]:
+        if keys[K_s]:
             paddleA.moveDown(5)
 
         # movimenti del paddle B (frecce su/giu)
-        if keys[pygame.K_UP]:
+        if keys[K_UP]:
             paddleB.moveUp(5)
-        if keys[pygame.K_DOWN]:
+        if keys[K_DOWN]:
             paddleB.moveDown(5)
 
         ball.muovi()
