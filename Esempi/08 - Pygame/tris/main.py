@@ -21,9 +21,9 @@ reset_button_size = (width, 100)
 tavolo_posizione = (0,0)
 tavolo_size = (width, height - reset_button_size[1])
 tavolo_width , tavolo_height = tavolo_size
-nrighe = 3
-ncolonne = 3
-vince = 3
+nrighe = 5
+ncolonne = 6
+vince = 4
 tavolo = Tavolo(screen, tavolo_posizione, tavolo_size, nrighe=nrighe, ncolonne=ncolonne, vince=vince)
 reset_button = Reset_Button(screen, (0, tavolo_height), reset_button_size)
 reset_button.draw(False)
